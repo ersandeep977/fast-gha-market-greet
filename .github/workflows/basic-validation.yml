@@ -1,0 +1,21 @@
+name: Basic Validation
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test-action:
+    name: Test Print Name Place Age Action
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+
+      - name: Run the custom action with sample data
+        uses: Sandeep-bmj/market-gha-test@v2
+        with:
+          name: "Sandeep"
+          place: "India"
+          age: "30"

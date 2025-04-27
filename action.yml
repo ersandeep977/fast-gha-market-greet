@@ -1,0 +1,32 @@
+# This is a simple GitHub Action that prints a name passed as an input.
+# It demonstrates how to use the `composite` action type.
+# The action takes a single input, `name`, and prints a greeting message.
+
+name: 'Sandeep Lightning Greet'
+description: 'A GitHub Action to print a given name,age and places to the console.'
+author: 'Sandeep kumar patel'
+
+inputs:
+  name:
+    description: 'The name to print'
+    required: true
+  place:
+    description: 'The place to print'
+    required: true
+  age:
+    description: 'The age to print'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Print Details
+      run: |
+        echo "Hello, my name is ${{ inputs.name }}."
+        echo "I am from ${{ inputs.place }}."
+        echo "I am ${{ inputs.age }} years old."
+      shell: bash
+
+branding:
+  icon: 'cloud-lightning'
+  color: 'yellow'
