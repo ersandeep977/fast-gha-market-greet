@@ -28,5 +28,5 @@ runs:
       shell: bash
 
 branding:
-  icon: 'https://raw.githubusercontent.com/ersandeep977/sandeep-lightning-greet/refs/heads/main/icons/icon.webp'
-  color: 'yellow'
+  icon: 'terminal'
+  color: 'blue'
