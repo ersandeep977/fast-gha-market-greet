@@ -5,7 +5,7 @@ This GitHub Action prints a name to the logs.
 ---
 ## 📊 Workflow Status
 
-[![Basic Validation](https://github.com/ersandeep977/fast-gha-market-greet/actions/workflows/basic-validation.yml/badge.svg)](https://github.com/ersandeep977/fast-gha-market-greet/actions/workflows/basic-validation.yml)
+[![Basic Validation](https://github.com/ersandeep977/sandeep-lightning-greet/actions/workflows/basic-validation.yml/badge.svg)](https://github.com/ersandeep977/sandeep-lightning-greet/actions/workflows/basic-validation.yml)
 
 ---
 
@@ -85,7 +85,7 @@ Feel free to fork the repo, improve the action, or open issues.
 Add this step to your workflow:
 
 ```yaml
-- uses: ersandeep977/fast-gha-market-greet@v1
+- uses: ersandeep977/sandeep-lightning-greet@v1
   with:
     name: "Sandeep"
     place: "India"
@@ -108,7 +108,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Say Hello
-        uses: ersandeep977/fast-gha-market-greet@v1
+        uses: ersandeep977/sandeep-lightning-greet@v1
         with:
           name: "Sandeep"
           place: "India"
@@ -130,6 +130,6 @@ To use this action in your workflow, install it via the `uses:` keyword.
 
 ```yaml
 - name: name of your workflow 
-  uses: ersandeep977/fast-gha-market-greet@v1
+  uses: ersandeep977/sandeep-lightning-greet@v1
 ```
 ---
