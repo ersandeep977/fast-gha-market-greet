@@ -15,15 +15,16 @@ This GitHub Action prints a name to the logs.
 
 ## 📌 Table of Contents
 
-- [Author](#-author)
+- [🧑 Author](#-author)
 - [📅 Current Version](#-current-version)
-- [Description](#-description)
-- [Features](#-features)
-- [Inputs](#-inputs)
-- [Contributing](#-contributing)
-- [Usage](#-usage)
-- [Example Workflow](#-example-workflow)
-- [Output](#-Output)
+- [📝 Description](#-description)
+- [✨ Features](#-features)
+- [🔧 Inputs](#-inputs)
+- [🙌 Contributing](#-contributing)
+- [🚀 Usage](#-usage)
+- [🧪 Example Workflow](#-example-workflow)
+- [📝 Output](#-Output)
+- [📦 Installation](#-installation)
 
 ---
 ## 🧑‍💻 Author
@@ -115,7 +116,7 @@ jobs:
 
 ```
 ---
-## Output
+## 📝 Output
 
 ```
 Hello, my name is Sandeep.
