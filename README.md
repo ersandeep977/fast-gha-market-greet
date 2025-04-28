@@ -108,12 +108,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Say Hello
-        uses: ersandeep977/sandeep-lightning-greet@v1
+
+      - uses: ersandeep977/sandeep-lightning-greet@v1
         with:
           name: "Sandeep"
           place: "India"
           age: "30"
-
 ```
 ---
 ## 📝 Output
