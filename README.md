@@ -84,32 +84,34 @@ Feel free to fork the repo, improve the action, or open issues.
 
 Add this step to your workflow:
 
-```yaml
+```
+# 👋 Print Name,age and place GitHub Action by Sandeep
 - uses: ersandeep977/sandeep-lightning-greet@v1
   with:
     name: "Sandeep"
     place: "India"
     age: "30"
-# 👋 Print Name,age and place GitHub Action by Sandeep
 ```
 ---
 ## 🧪 example-workflow
 ```
-name: Example Greet Workflow
+name: Basic Validation
 
 on:
   push:
     branches:
       - main
-
 jobs:
-  greet-user:
+  test-action:
+    name: Test Print Name Place Age Action
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Say Hello
 
-      - uses: ersandeep977/sandeep-lightning-greet@v1
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+
+      - name: Run the custom action with sample data
+        uses: ersandeep977/sandeep-lightning-greet@v1
         with:
           name: "Sandeep"
           place: "India"
