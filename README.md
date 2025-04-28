@@ -80,6 +80,15 @@ Feel free to fork the repo, improve the action, or open issues.
 
 ---
 
+## 📦 Installation
+
+To use this action in your workflow, install it via the `uses:` keyword.
+
+```yaml
+- name: name of your workflow 
+  uses: ersandeep977/sandeep-lightning-greet@v1
+```
+---
 ## 🚀 Usage
 
 Add this step to your workflow:
@@ -94,44 +103,36 @@ Add this step to your workflow:
 ```
 ---
 ## 🧪 example-workflow
-```
-name: Basic Validation
+```# File: .github/workflows/greet-on-push.yml
+
+name: Greet on Push
 
 on:
   push:
     branches:
-      - main
+      - main   
+
 jobs:
-  test-action:
-    name: Test Print Name Place Age Action
+  greet_job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout the repo
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Run the custom action with sample data
+      - name: Run Sandeep Lightning Greet Action
         uses: ersandeep977/sandeep-lightning-greet@v1
         with:
           name: "Sandeep"
           place: "India"
           age: "30"
+
 ```
 ---
 ## 📝 Output
-
 ```
 Hello, my name is Sandeep.
 I am from India.
 I am 30 years old.
-```
----
-## 📦 Installation
-
-To use this action in your workflow, install it via the `uses:` keyword.
-
-```yaml
-- name: name of your workflow 
-  uses: ersandeep977/sandeep-lightning-greet@v1
 ```
 ---
