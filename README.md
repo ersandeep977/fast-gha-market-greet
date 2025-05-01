@@ -1,4 +1,4 @@
-# Print Name Action test
+# Print Name Action test inside the docker container
 
 This GitHub Action prints a name to the logs.
 
@@ -85,8 +85,8 @@ Feel free to fork the repo, improve the action, or open issues.
 To use this action in your workflow, install it via the `uses:` keyword.
 
 ```yaml
-- name: name of your workflow 
-  uses: ersandeep977/sandeep-lightning-greet@v1
+      - name: Run the custom action with sample data on docker
+        uses: ersandeep977/sandeep-lightning-greet@v2
 ```
 ---
 ## 🚀 Usage
@@ -95,7 +95,7 @@ Add this step to your workflow:
 
 ```
 # 👋 Print Name,age and place GitHub Action by Sandeep
-- uses: ersandeep977/sandeep-lightning-greet@v1
+- uses: ersandeep977/sandeep-lightning-greet@v2
   with:
     name: "Sandeep"
     place: "India"
@@ -105,23 +105,25 @@ Add this step to your workflow:
 ## 🧪 example-workflow
 ```# File: .github/workflows/greet-on-push.yml
 
-name: Greet on Push
+# Name of the file test
+name: Basic Validation
 
 on:
   push:
     branches:
-      - main   
+      - main
 
 jobs:
-  greet_job:
+  test-action:
+    name: Test Print Name Place Age Action
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout the repository
         uses: actions/checkout@v4
 
-      - name: Run Sandeep Lightning Greet Action
-        uses: ersandeep977/sandeep-lightning-greet@v1
+      - name: Run the custom action with sample data on docker
+        uses: ersandeep977/sandeep-lightning-greet@v2
         with:
           name: "Sandeep"
           place: "India"
