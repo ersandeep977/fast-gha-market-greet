@@ -2,30 +2,25 @@
 # It demonstrates how to use the `composite` action type.
 # The action takes a single input, `name`, and prints a greeting message.
 
-name: 'Sandeep Lightning Greet'
-description: 'A GitHub Action to print a given name,age and places to the console.'
+name: 'Sandeep Lightning Greet (Docker)'
+description: 'A fast greeting action running inside a Docker container.'
 author: 'Sandeep kumar patel'
 
 inputs:
   name:
-    description: 'The name to print'
+    description: 'Your name'
     required: true
   place:
-    description: 'The place to print'
+    description: 'Your location'
     required: true
   age:
-    description: 'The age to print'
+    description: 'Your age'
     required: true
 
 runs:
-  using: 'composite'
-  steps:
-    - name: Print Details
-      run: |
-        echo "Hello, my name is ${{ inputs.name }}."
-        echo "I am from ${{ inputs.place }}."
-        echo "I am ${{ inputs.age }} years old."
-      shell: bash
+  using: 'docker'
+  image: 'Dockerfile'
+  args: []
 
 branding:
   icon: 'terminal'
