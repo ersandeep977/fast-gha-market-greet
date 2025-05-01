@@ -2,7 +2,7 @@
 # It demonstrates how to use the `composite` action type.
 # The action takes a single input, `name`, and prints a greeting message.
 
-name: 'Sandeep Lightning Greet (Docker)'
+name: 'Sandeep Lightning Greet'
 description: 'A fast greeting action running inside a Docker container.'
 author: 'Sandeep kumar patel'
 
